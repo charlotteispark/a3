@@ -1,0 +1,125 @@
+<!DOCTYPE HTML>
+<html lang="en">
+<head>
+	<title>Vis & Society Assignment 3</title>
+	<link rel="stylesheet" href="https://vis-society.github.io/assignments/report.css" />
+</head>
+
+<body>
+	<header>
+		<h1>
+			<small>Assignment 3</small>
+			Visualization Design
+		</h1>
+
+		<p>
+			<strong>Charlotte Park</strong> — <em>cispark@mit.edu</em>
+		</p>
+	</header>
+
+	<main>
+		<section>
+			<h2>Phase One: Sketching Visualizations</h2>
+
+      <figure>
+				<img src="./Sketch1.jpg" style="width:100%" alt="" />
+				<figcaption>
+					This visual depicts the different distribution of men and women in both 1900 and 2000 using raw population numbers. We can see that while both the male and female populations in 1900 have a clear downward trend, the male and female populations in 2000 have more local optima. We also note that with the rounded numbers, there are more men than women in 1900.
+				</figcaption>
+			</figure>
+
+			<p>
+				Design Rationale for Sketch 1:
+			</p>
+
+			<ul>
+				<li> Often when people talk about distributions, my first thought is a line graph depicting the pdf</li>
+				<li>I just used raw numbers here instead of percentages as the general shape is the same</li>
+				<li>I was hoping that this plot would show the shapes of the distributions in a way that would allow for comparisons between men and women and between 1900 and 2000 data</li>
+				<li>Knowing that the population levels are very different for the two years, using raw numbers instead of percentages allows both lines to be easily identifiable on the same plot</li>
+				<li>Overall I think it gives a nice sense of the relative shape but I think the rounding obscures the results</li>
+				<li>A chart that relies more on percentages might give a more accurate depiction, though it might need to be multiple plots side by side</li>
+			</ul>
+
+      <figure>
+				<img src="./Sketch2.jpg" style="width:100%" alt="" />
+				<figcaption>
+          This visual depicts the distribution of the population in 1900 and 2000 using precentages instead of raw numbers. The percentage of each age bucket that is male vs female is denoted by the highlighted areas in blue and pink. We can see that the relative numbers of men and women do not differ drastically in age buckets containing a larger percentage of the population.
+				</figcaption>
+			</figure>
+
+			<p>
+				Design Rationale for Sketch 2:
+			</p>
+
+			<ul>
+				<li>I generated this visual to emphasize percentages over raw numbers</li>
+				<li>I wanted it to be easy to see what percent of the population was what age – something which was harder to do in my last visual</li>
+				<li>As a whole I do not think this visual did a bad job of communicating the distribution of ages of the population</li>
+				<li>You can clearly see here how much flatter the distribution is in 2000 vs 1900</li>
+				<li>Because the differences between population statistics for men and women are not super significant (except at the far right end of the age spectrum), this chart made it harder to tell the differences between male and female distributions</li>
+				<li>Separating this data as in the first chart rather than stacking it seems to be more effective</li>
+				<li>Does not capture the fact that absolute numbers of men and women are different</li>
+				<li>Also the y axis should have the same scale for both – that was an oversight as I was sketching and makes things much easier to compare</li>
+			</ul>
+
+      <figure>
+				<img src="./Sketch3.jpg" style="width:100%" alt="" />
+				<figcaption>
+          This visual depicts the cummulative relative frequency of men and women in the US population in 1900 (left) and 2000 (right). We can see that significantly more of the US population was under the age of 30 in 1900 compared to in 2000.
+				</figcaption>
+			</figure>
+
+			<p>
+				Design Rationale for Sketch 3:
+			</p>
+
+			<ul>
+				<li>I created this chart to get a different view of the age of the population</li>
+				<li>Created separate lines for men and women and separate plots for different years so things were less crowded</li>
+				<li>This visual communicates life expectancy in a way the others do not</li>
+				<li>This sketch was very rough data wise so I am unsure how it would translate when the data is plugged in</li>
+				<li>I think it makes comparison relatively easy by putting the two years side by side with the same axes scales</li>
+				<li>However, I am not sure how different lines for men and women would be and they are harder to tell apart if very similar</li>
+				<li>Does not account for the fact that absolute numbers of men and women are different</li>
+			</ul>
+
+      <h3>Reflection</h3>
+
+      <p>
+        The three visuals that I designed all emphasize different things. I believe the biggest takeaway from the first visual is the absolute prevalence of different age groups for both genders. I think that this is the only of the three visuals that emphasize just how much the US population has grown over the last century. By removing absolute values, I believe that the second visual does a good job at showing the relative presence of different age groups. The fact that the scales of the y axes are similar (and should ideally be the same), there is a clear takeaway that the PDF of the US population has flattened in the last century. However, the stacked nature of the data for men and women makes it hard to compare the US male and female populations. There is also no accounting for the difference in the size of male or female populations in a single year, which is also a weakness of the third visual. The third visual, though, on the positive side, does the best job of depicting the increasing life expectancy over the last century. It also presents the data in a way that makes it easy to compare male and female populations and 1900 vs 2000 populations. From these sketches, I have taken away that separating the male and female data into separate lines rather than stacking things better compares the distributions of the two groups. Additionally, I have learned that there are several different things this data can show – if I want to emphasize total population growth and absolute numbers, a visual like the first is better. If I wish to emphasize the life expectancy, a CDF plot like the third is better. I also believe that dropping down marker lines as I have done in the third plot is a good way to call attention to certain jumps or dips in population. Perhaps including small text blurbs with these points on the visuals would further emphasize interesting trends and be a good thing to include in a final visual.
+      </p>
+
+		</section>
+
+		<section>
+			<h2>Phase Two: Final Design</h2>
+
+			<figure>
+				<img src="./CDF.png" style="width:100%" alt="" />
+				<figcaption>
+				This chart depicts the cummulative relative frequency of men and women in the 1900 (top) and 2000 (bottom) US census. We can see that only around 50% of the population was under the age of 30 in 2000, compared to roughly 70% in 1900. Moreover, we can see that 85% of women and 90% of men were under the age of 60 in 2000 comapred to 95% of both sexes in 1900, indicating just how much the life expectancy has increased in the last century.
+				</figcaption>
+			</figure>
+		</section>
+
+		<section>
+			<h2>Design Process & Design Decisions</h2>
+
+			<p>
+				I made this graphic in the hopes to convey the changing makeup of the age of the US population, with an emphasis given to the increasing life expectancy over the last century. I hope to also convey that the life expectancy has not increased in quite the same way for men and women over the past century, with the life expectancy for both sexes being roughly the same in 1900 but being noticeably longer for women in 2000. By highlighting certain data entries and including numbers as annotations on the visual, I am hoping to emphasize what percentage of the male and female populations are below a certain age. This also gives a sense of just how much the average age of the population has increased over the last century.
+			</p>
+			<p>
+					As my original investigation question was about distribution of the population, I chose to transform things to percentages over raw population numbers. Choosing to highlight specific percentages (at ages 30 and 60) was meant to give clear reference points to look at to compare the bottom and top plots. As the plots are not very tall and the y axes are the same, I felt it was harder to distinguish the difference in shape without these marked points. I chose to separate the data into two separate axes with lines separated by sex because I believe this made it easier to fully see and compare the data. The lines for populations of men and women within the same year were close enough that putting them on the same set of axes emphasized their differences in a way that plotting them on separate axes would not. Moreover though, plotting all four lines on a single set of axes seemed overly crowded to get a clear shape of the different population cumulative frequency curves, motivating me to separate the different years onto two sets of axes. I chose to use pink and blue to convey the male and female populations because this color choice is common when separating the sexes. I wanted to make the two lines easy to distinguish and have their meaning easily understandable even before viewing the legend, however dated this color scheme may be. On another note, the primary aspect of the data that may be downplayed by this visual is the total population increase between 1900 and 2000. As previously stated, I wanted to emphasize the relative distribution of ages rather than total population size, causing me to make this tradeoff. The visual also downplays any differences between the total number of men and women (though this is less drastic in the full dataset than in the rounded version).
+      </p>
+
+
+      <h3>Reflection</h3>
+
+      <p>
+        My final design for this assignment is quite like the last sketch I made in part 1. By adding annotations of several key values and using the true data instead of the rounded values, I was able to address several of the more pertinent concerns I had about this last sketch. I believe that the process of sketching helped me to see the data through different lenses and ultimately choose the one I most wanted to convey. I used much of the same type of process I used when between subsequent sketches to inform my final design. I recognize that some of my comments on my sketches were driven by the rough rounded data, and viewing the final data helped me realize that certain designs were in fact feasible. For example, I was not sure if the male and female population lines for a given year would be too similar to tell apart, but I found this was not the case after dealing with the full data for majority of the values. Overall, I believe that the process of sketching was greatly valuable and that, if I had not sketched some rough ideas, I would have spent more time making initial visualizations using software. I spent more time refining a design idea and intention and less time worrying about why I couldn’t make an earlier iteration of the visual show up correctly on Tableau.
+      </p>
+		</section>
+	</main>
+</body>
+</html>
